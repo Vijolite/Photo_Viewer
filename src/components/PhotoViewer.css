@@ -1,0 +1,17 @@
+.withFrame {
+    border-style: dotted;
+    border-color: darkorange;
+    border-width: 5px;
+}
+.pic_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pic_one {
+    position:relative;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: calc(95%/5);
+    box-sizing: border-box;
+}
