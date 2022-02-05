@@ -12,15 +12,21 @@ export function PhotoViewer() {    // declare and export new function called 'Ph
   const imageUrls = getImageUrls();
 
   function viewUrl(a) {
-      alert(a);    
+      //alert(a);    
       setUrl(a);
   }
 
   //onClick={function() {setUrl(props.src)}}></img></li>;
   function Pic(props) {
-      return <li className="pic_list"><img src ={props.src} alt ={props.src} width ="50" height="50" 
-      onClick={function() {viewUrl(props.src)}}></img></li>;
+      return <li className="pic_list">
+      <img class={`img_choosen_${currentUrl===props.src ? "yes":"no"}`}
+      src ={props.src} alt ={props.src} width ="50" height="50" 
+      onClick={function() {viewUrl(props.src)}}></img>
+      </li>;
     }
+
+
+    
 
   function PlacePictures() {
       return (

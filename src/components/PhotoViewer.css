@@ -11,7 +11,15 @@
 .pic_one {
     position:relative;
     padding: 0.5em;
-    margin-bottom: 1em;
+    margin: 5em;
     width: calc(95%/5);
     box-sizing: border-box;
+}
+.img_choosen_yes {
+    border-style:double;
+    border-color: red;
+    border-width: 3px;
+}
+.img_choosen_no {
+    border-style:none
 }
