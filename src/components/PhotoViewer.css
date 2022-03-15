@@ -1,6 +1,11 @@
-.withFrame {
+.withFrameR {
     border-style: dotted;
-    border-color: darkorange;
+    border-color: rgb(40, 192, 19);
+    border-width: 5px;
+}
+.withFrameL {
+    border-style: dotted;
+    border-color: red;
     border-width: 5px;
 }
 .pic_list {
@@ -15,11 +20,19 @@
     width: calc(95%/5);
     box-sizing: border-box;
 }
-.img_choosen_yes {
+.img_choosen_left_yes {
     border-style:double;
     border-color: red;
     border-width: 3px;
 }
-.img_choosen_no {
+.img_choosen_right_yes {
+    border-style:double;
+    border-color: rgb(40, 192, 19);
+    border-width: 3px;
+}
+.img_choosen_left_no {
+    border-style:none
+}
+.img_choosen_right_no {
     border-style:none
 }
